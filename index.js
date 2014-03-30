@@ -19,7 +19,8 @@ function getGitignore(fileName, url, append) {
 		encoding: 'utf8',
 		mode: "0744"
 	};
-	console.log("Downloading and appending gitignore to " + fileName);
+	var appendStr = append ? ' and appending' : '';
+	console.log(util.format("Downloading%s gitignore to %s", appendStr, fileName);
 	stream = fs.createWriteStream(fileName, options);
 	if (append) {
 		// If appending, add an extra newline between old and new content
