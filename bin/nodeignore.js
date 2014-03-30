@@ -7,7 +7,7 @@ var program = require('commander'),
 	util = require('util')
 	nodeignore = require('../');
 
-program.version('0.1.0')
+program.version('0.1.1')
     .option('-f, --force', 'Force overwrite of current .gitignore if it already exists')
     .option('-a, --append', 'Append to current .gitignore if it already exists')
     .option('-d, --dir [dir]', 'Directory to download into. Defaults to current directory', false)
