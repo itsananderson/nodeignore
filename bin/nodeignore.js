@@ -11,6 +11,7 @@ program.version('0.1.3')
     .option('-f, --force', 'Force overwrite of current .gitignore if it already exists')
     .option('-a, --append', 'Append to current .gitignore if it already exists')
     .option('-d, --dir [dir]', 'Directory to download into. Defaults to current directory', false)
+    .option('-l, --language [language]', 'Language for which to download the .gitignore', 'Node')
     .parse(process.argv);
 
 var ignoreFile = '.gitignore';
@@ -33,5 +34,5 @@ fs.exists(ignoreFile, function(exists) {
 		}
 	}
 	
-	nodeignore.getGitignore(ignoreFile, nodeignore.getIgnoreUrl('Node'), program.append);
+	nodeignore.getGitignore(ignoreFile, nodeignore.getIgnoreUrl(program.language), program.append);
 });
