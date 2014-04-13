@@ -51,4 +51,4 @@ module.exports = {
 	getIgnoreUrl: getIgnoreUrl,
 	getGlobalIgnoreUrl: getGlobalIgnoreUrl,
 	getGitignore: getGitignore
-}
+};
