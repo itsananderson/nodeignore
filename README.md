@@ -36,7 +36,12 @@ Visit GitHub's [gitignore](https://github.com/github/gitignore/) project for a l
 If you want to download a .gitignore from GitHub's "Global" collection, use the `-g` flag.
 This is best when paired with custom `-l` (--language) and `-d` (--dir) parameters.
 
-Example: `nodeignore -g -l vim -d ~/`
+Example:
+
+```bash
+# Download and append vim's .gitignore into home directory
+nodeignore -a -g -l vim -d ~/
+```
 
 ### Existing .gitignore
 
