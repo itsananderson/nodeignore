@@ -21,11 +21,22 @@ To download the Node .gitignore file into the current directory with default set
 
 If you want to download the .gitignore file into another directory, run `nodeignore -d <other-directory>`
 
+### Custom Output File
+
+If you want to use some file name other than `.gitignore`, run `nodeignore -n <other-name>`
+
 ### Custom Language
 
 By default, `nodeignore` will download a `Node` specific `.gitignore` from GitHub.
 You can download a different language/platform by running `nodeignore -l <other-language>`
 Visit GitHub's [gitignore](https://github.com/github/gitignore/) project for a list of available languages.
+
+### Global Gitignore
+
+If you want to download a .gitignore from GitHub's "Global" collection, use the `-g` flag.
+This is best when paired with custom `-l` (--language) and `-d` (--dir) parameters.
+
+Example: `nodeignore -g -l vim -d ~/`
 
 ### Existing .gitignore
 
