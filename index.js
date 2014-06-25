@@ -10,7 +10,7 @@ function getIgnoreUrl(name) {
 }
 
 function getGlobalIgnoreUrl(name) {
-	return util.format(globalIgnoreUrlFormat);
+	return util.format(globalIgnoreUrlFormat, name);
 }
 
 function getGitignore(fileName, url, append) {
