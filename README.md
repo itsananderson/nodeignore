@@ -40,7 +40,22 @@ Example:
 
 ```bash
 # Download and append vim's .gitignore into home directory
-nodeignore -a -g -l vim -d ~/
+nodeignore --append --global --language vim --dir ~/
+
+# Download and replace the OSX .gitignore into .gitignore_global in the home directory
+nodeignore --force --global --language OSX --dir ~/ --name .gitignore_global
+```
+
+**Note**: Git needs to be configured with a path to the global gitignore. Run the following command to see if it's already configured:
+
+```bash
+git config --global core.excludesfile
+```
+
+If it's not configured, you can configure it with this command:
+
+```bash
+git config --global core.excludesfile ~/.gitignore
 ```
 
 ### Existing .gitignore
