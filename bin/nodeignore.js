@@ -1,13 +1,14 @@
 #!/usr/bin/env node
 
 var program = require('commander'),
+	pkg = require('../package.json'),
 	fs = require('fs'),
 	https = require('https'),
 	path = require('path'),
 	util = require('util')
 	nodeignore = require('../');
 
-program.version('0.2.1')
+program.version(pkg.version)
 	.option('-f, --force', 'Force overwrite of current .gitignore if it already exists')
 	.option('-a, --append', 'Append to current .gitignore if it already exists')
 	.option('-d, --dir [dir]', 'Directory to download into. Defaults to current directory', false)
