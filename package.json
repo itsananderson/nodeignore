@@ -1,6 +1,6 @@
 {
   "name": "nodeignore",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "description": "A simple CLI utility for pulling down the latest .gitignore for Node from GitHub",
   "preferGlobal": true,
   "main": "index.js",
