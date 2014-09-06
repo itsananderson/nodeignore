@@ -1,7 +1,7 @@
 nodeignore
 ==========
 
-A simple CLI utility for pulling down the latest .gitignore for Node from GitHub
+An npm package for downloading .gitignore files from GitHub
 
 Installation
 ------------
